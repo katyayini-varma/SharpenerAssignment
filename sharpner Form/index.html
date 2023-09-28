@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <style>
+        body{
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.8EqUdFXMeB97k3EXPh0KAwHaEo&pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+.box{
+    margin:auto;
+    width: 50%;
+    height: 80%;
+    border: 3px solid green;
+    padding: 25px;
+    border-radius:2%;
+    background-color: white;
+}
+.para{
+    text-align: center;
+}
+#head{
+    text-align: center;
+    color: rgb(171, 8, 8);
+}
+.hr{
+    /* border: 1px solid black; */
+    padding: 7px;
+
+}
+#forms{
+    width: 98%;
+    padding: 5px;
+}
+.ip{
+    width: 48%;
+    height: 25px;
+}
+.ip1{
+    height: 29px;
+    width: 48%;
+    margin-left: 20px;
+   }
+#btn{
+    margin-top: 15px;
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(245, 139, 17);
+    border: none;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 id="head">Book a call</h1>
+        <p class="para">Book a call slot and our representative will call you within 1hr of selected time</p>
+        <hr style="width: 98%;">
+        <form class="hr">
+            <label for="name">Name</label><br>
+            <input type="text" id="forms"><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="forms"><br>
+            <label for="phone">Phone</label><br>
+            <input type="number" id="forms"><br>
+            <label for="date">Time for Call</label><br>
+            <input type="datetime-local" class="ip" id="dt">
+            <select name="time" class="ip1" id="tim">
+                <option value="times">11:00</option>
+                <option value="times">11:30</option>
+                <option value="times">12:00</option>
+                <option value="times">12:30</option>
+            </select><br>
+            
+            <button type="submit" id="btn">GET A CALL</button>
+        </form>
+    </div>
+</body>
+</html>
